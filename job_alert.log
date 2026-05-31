@@ -1,0 +1,53 @@
+2026-05-31 11:14:39 | INFO     | database | Database initialised at jobs.db
+2026-05-31 11:14:39 | WARNING  | notifier | TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID not set — alerts disabled
+2026-05-31 11:26:53 | INFO     | database | Database initialised at jobs.db
+2026-05-31 11:26:58 | INFO     | notifier | Telegram OK — bot: @PuneJobAlertsBot
+2026-05-31 11:36:10 | INFO     | database | Database initialised at jobs.db
+2026-05-31 11:36:10 | INFO     | main | Bot token set  : YES
+2026-05-31 11:36:10 | INFO     | main | Chat ID set    : YES
+2026-05-31 11:36:10 | INFO     | scheduler | =======================================================
+2026-05-31 11:36:10 | INFO     | scheduler | Pipeline started at 2026-05-31 06:06:10 UTC
+2026-05-31 11:36:10 | INFO     | scheduler | =======================================================
+2026-05-31 11:36:20 | INFO     | scraper | Google [walk-in drive Pune freshers software eng]: 0 results
+2026-05-31 11:36:28 | INFO     | scraper | Google [walk in interview Pune IT fresher this w]: 0 results
+2026-05-31 11:36:35 | INFO     | scraper | Google [Pune fresher jobs 0-2 years software dev]: 0 results
+2026-05-31 11:36:42 | INFO     | scraper | Google [hiring drive Pune graduate engineer trai]: 0 results
+2026-05-31 11:36:50 | INFO     | scraper | Google [mega drive Pune fresher developer]: 0 results
+2026-05-31 11:36:54 | INFO     | scraper | Google total raw: 0
+2026-05-31 11:37:14 | INFO     | scraper | Naukri total raw: 0
+2026-05-31 11:37:14 | INFO     | scraper | Total unique raw jobs from all sources: 0
+2026-05-31 11:37:14 | INFO     | scheduler | Step 1 — Scraped: 0 raw jobs
+2026-05-31 11:37:14 | INFO     | scheduler | No jobs found this cycle.
+2026-05-31 11:37:14 | INFO     | main | One-shot complete: {'started': '2026-05-31T06:06:10.888050+00:00', 'scraped': 0, 'passed': 0, 'new': 0, 'sent': 0, 'errors': []}
+2026-05-31 16:10:21 | INFO     | database | Database initialised at jobs.db
+2026-05-31 16:10:21 | INFO     | main | Bot token set  : YES
+2026-05-31 16:10:21 | INFO     | main | Chat ID set    : YES
+2026-05-31 16:10:22 | INFO     | scheduler | =======================================================
+2026-05-31 16:10:22 | INFO     | scheduler | Pipeline started at 2026-05-31 10:40:22 UTC
+2026-05-31 16:10:22 | INFO     | scheduler | =======================================================
+2026-05-31 16:10:22 | INFO     | scraper | Starting all scrapers…
+2026-05-31 16:10:40 | INFO     | scraper | Indeed [fresher software engineer p1]: 32 jobs
+2026-05-31 16:11:24 | INFO     | scraper | Naukri total: 0
+2026-05-31 16:11:27 | INFO     | scraper | Shine total: 0
+2026-05-31 16:11:36 | INFO     | scraper | TimesJobs total: 0
+2026-05-31 16:11:40 | INFO     | scraper | Indeed total: 32
+2026-05-31 16:11:42 | INFO     | scraper | LinkedIn [fresher software engineer]: 7 jobs
+2026-05-31 16:13:49 | INFO     | scraper | LinkedIn [junior developer]: 11 jobs
+2026-05-31 16:15:04 | INFO     | scraper | LinkedIn [associate software engineer]: 60 jobs
+2026-05-31 16:15:08 | INFO     | scraper | LinkedIn total: 78
+2026-05-31 16:15:08 | INFO     | scraper | All scrapers done — unique raw jobs: 70
+2026-05-31 16:15:08 | INFO     | scheduler | Step 1 — Scraped: 70 raw jobs
+2026-05-31 16:15:08 | INFO     | filter | Filter: 55 accepted / 15 rejected
+2026-05-31 16:15:08 | INFO     | scheduler | Step 2 — Filtered: 55 accepted / 15 rejected
+2026-05-31 16:15:09 | INFO     | scheduler | Step 3 — Saved: 55 new, 0 duplicates skipped
+2026-05-31 16:16:33 | INFO     | notifier | Telegram batch: 55 sent, 0 failed
+2026-05-31 16:16:35 | INFO     | scheduler | Step 4 — Alerts: 55 sent, 0 failed
+2026-05-31 16:16:35 | INFO     | scheduler | =======================================================
+2026-05-31 16:16:35 | INFO     | scheduler | Pipeline done  | 373.1s elapsed
+2026-05-31 16:16:35 | INFO     | scheduler |   Scraped : 70
+2026-05-31 16:16:35 | INFO     | scheduler |   Passed  : 55
+2026-05-31 16:16:35 | INFO     | scheduler |   New     : 55
+2026-05-31 16:16:35 | INFO     | scheduler |   Sent    : 55
+2026-05-31 16:16:35 | INFO     | scheduler |   DB total: 55 (walkins: 0)
+2026-05-31 16:16:35 | INFO     | scheduler | =======================================================
+2026-05-31 16:16:35 | INFO     | main | One-shot complete: {'started': '2026-05-31T10:40:22.071972+00:00', 'scraped': 70, 'passed': 55, 'new': 55, 'sent': 55, 'errors': []}
