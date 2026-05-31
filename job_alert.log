@@ -51,3 +51,73 @@
 2026-05-31 16:16:35 | INFO     | scheduler |   DB total: 55 (walkins: 0)
 2026-05-31 16:16:35 | INFO     | scheduler | =======================================================
 2026-05-31 16:16:35 | INFO     | main | One-shot complete: {'started': '2026-05-31T10:40:22.071972+00:00', 'scraped': 70, 'passed': 55, 'new': 55, 'sent': 55, 'errors': []}
+2026-05-31 16:33:15 | INFO     | database | Database initialised at jobs.db
+2026-05-31 16:33:15 | INFO     | main | Bot token set  : YES
+2026-05-31 16:33:15 | INFO     | main | Chat ID set    : YES
+2026-05-31 16:33:15 | INFO     | scheduler | Scheduler starting — every 2 hour(s)
+2026-05-31 16:33:15 | INFO     | apscheduler.scheduler | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-31 16:33:15 | INFO     | apscheduler.scheduler | Added job "Pune Fresher Job Alert" to job store "default"
+2026-05-31 16:33:15 | INFO     | apscheduler.scheduler | Scheduler started
+2026-05-31 16:33:15 | INFO     | scheduler | Running pipeline immediately on startup…
+2026-05-31 16:33:15 | INFO     | scheduler | =======================================================
+2026-05-31 16:33:15 | INFO     | scheduler | Pipeline started at 2026-05-31 11:03:15 UTC
+2026-05-31 16:33:15 | INFO     | scheduler | =======================================================
+2026-05-31 16:33:15 | INFO     | scraper | Starting all scrapers…
+2026-05-31 16:33:47 | ERROR    | scraper | Shine page error: Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to "https://www.shine.com/job-search/fresher-software-engineer-jobs-in-pune/", waiting until "domcontentloaded"
+
+2026-05-31 16:33:52 | ERROR    | scraper | LinkedIn page error [fresher software engineer]: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.linkedin.com/jobs/search/?keywords=fresher+software+engineer&location=Pune%2C+Maharashtra%2C+India&f_E=2%2C1&f_TPR=r604800&start=0", waiting until "networkidle"
+
+2026-05-31 16:34:14 | ERROR    | scraper | Shine page error: Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to "https://www.shine.com/job-search/junior-developer-jobs-in-pune/", waiting until "domcontentloaded"
+
+2026-05-31 16:34:25 | ERROR    | scraper | LinkedIn page error [graduate engineer trainee]: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.linkedin.com/jobs/search/?keywords=graduate+engineer+trainee&location=Pune%2C+Maharashtra%2C+India&f_E=2%2C1&f_TPR=r604800&start=0", waiting until "networkidle"
+
+2026-05-31 16:34:30 | ERROR    | scraper | TimesJobs page error: Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to "https://www.timesjobs.com/candidate/job-search.html?txtKeywords=graduate+engineer+trainee&txtLocation=Pune&cboWorkExp1=0&cboWorkExp2=2&postWeek=7", waiting until "domcontentloaded"
+
+2026-05-31 16:34:31 | ERROR    | scraper | Naukri page error [entry-level-developer p1]: Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to "https://www.naukri.com/entry-level-developer-jobs-in-pune", waiting until "domcontentloaded"
+
+2026-05-31 16:34:32 | INFO     | scraper | Naukri total: 0
+2026-05-31 16:34:39 | INFO     | scraper | Indeed total: 0
+2026-05-31 16:34:39 | ERROR    | scraper | TimesJobs page error: Page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.timesjobs.com/candidate/job-search.html?txtKeywords=walk-in+fresher+pune&txtLocation=Pune&cboWorkExp1=0&cboWorkExp2=2&postWeek=7
+Call log:
+  - navigating to "https://www.timesjobs.com/candidate/job-search.html?txtKeywords=walk-in+fresher+pune&txtLocation=Pune&cboWorkExp1=0&cboWorkExp2=2&postWeek=7", waiting until "domcontentloaded"
+
+2026-05-31 16:34:41 | ERROR    | scraper | Shine page error: Page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to "https://www.shine.com/job-search/graduate-engineer-trainee-jobs-in-pune/", waiting until "domcontentloaded"
+
+2026-05-31 16:34:42 | INFO     | scraper | TimesJobs total: 0
+2026-05-31 16:34:44 | INFO     | scraper | Shine total: 0
+2026-05-31 16:34:59 | ERROR    | scraper | LinkedIn page error [junior developer]: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.linkedin.com/jobs/search/?keywords=junior+developer&location=Pune%2C+Maharashtra%2C+India&f_E=2%2C1&f_TPR=r604800&start=0", waiting until "networkidle"
+
+2026-05-31 16:36:20 | INFO     | scraper | LinkedIn [associate software engineer]: 60 jobs
+2026-05-31 16:36:24 | INFO     | scraper | LinkedIn total: 60
+2026-05-31 16:36:24 | INFO     | scraper | All scrapers done — unique raw jobs: 60
+2026-05-31 16:36:24 | INFO     | scheduler | Step 1 — Scraped: 60 raw jobs
+2026-05-31 16:36:24 | INFO     | filter | Filter: 49 accepted / 11 rejected
+2026-05-31 16:36:24 | INFO     | scheduler | Step 2 — Filtered: 49 accepted / 11 rejected
+2026-05-31 16:36:25 | INFO     | scheduler | Step 3 — Saved: 2 new, 47 duplicates skipped
+2026-05-31 16:36:29 | INFO     | notifier | Telegram batch: 2 sent, 0 failed
+2026-05-31 16:36:29 | INFO     | scheduler | Step 4 — Alerts: 2 sent, 0 failed
+2026-05-31 16:36:29 | INFO     | scheduler | =======================================================
+2026-05-31 16:36:29 | INFO     | scheduler | Pipeline done  | 193.9s elapsed
+2026-05-31 16:36:29 | INFO     | scheduler |   Scraped : 60
+2026-05-31 16:36:29 | INFO     | scheduler |   Passed  : 49
+2026-05-31 16:36:29 | INFO     | scheduler |   New     : 2
+2026-05-31 16:36:29 | INFO     | scheduler |   Sent    : 2
+2026-05-31 16:36:29 | INFO     | scheduler |   DB total: 57 (walkins: 0)
+2026-05-31 16:36:29 | INFO     | scheduler | =======================================================
+2026-05-31 16:36:29 | INFO     | scheduler | Scheduler running. Next run in 2h. Ctrl+C to stop.
